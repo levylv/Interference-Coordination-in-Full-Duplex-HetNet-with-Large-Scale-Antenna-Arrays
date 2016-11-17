@@ -3,11 +3,10 @@ function [Greedy_flag, Greedy_fit] = Greedy()
 
 global al be c d d_hat g h h_hat;
 [K, S] = size(al);
-Maxiter = 200;
 numPick = 10;
 C_max = 0;
 for randpick = 1:numPick % randomly pick initial flag
-    flag = randint(1, S);
+    flag = randi([0, 1], 1, S);
     while 1
         delta_max = 0;
         for i = 1:S
@@ -29,7 +28,7 @@ for randpick = 1:numPick % randomly pick initial flag
     if C > C_max
         C_max = C;
         Greedy_flag = flag;
-        Greedy_fit = dl_capacity(flag);
+        Greedy_fit = C_max;
     end
 end
 
