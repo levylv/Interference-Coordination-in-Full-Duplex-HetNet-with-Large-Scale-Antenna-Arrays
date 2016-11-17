@@ -30,6 +30,5 @@ for randpick = 1:numPick % randomly pick initial flag
         Greedy_flag = flag;
         Greedy_fit = C_max;
     end
-end
 
 end
