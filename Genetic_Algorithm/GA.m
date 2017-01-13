@@ -4,7 +4,7 @@ global al;
 
 [K, S] = size(al);
 
-generation_size = 200; % number of iteration
+generation_size = 100; % number of iteration
 pop_size = S + 10; % number of pop size
 chromo_size = S; % length of chromo
 cross_rate = 0.6; % crossover rate
