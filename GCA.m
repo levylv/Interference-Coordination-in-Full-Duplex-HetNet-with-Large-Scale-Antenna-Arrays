@@ -5,9 +5,9 @@ global MUE SUE BS SC;
 global al c; 
 
 [K, S] = size(al);
-Th_scale = -6:0.5:-2;
+Th_scale = -4:0.2:0;
 Th = 10 .^ Th_scale; % For macroR = 1000m, set the threshold 
-kScale = 0:0.1:10; % set the weight of inter-tier interference
+kScale = 0:0.2:5; % set the weight of inter-tier interference
 
 % Define a graph
 map = zeros(S, S, length(Th)); 
