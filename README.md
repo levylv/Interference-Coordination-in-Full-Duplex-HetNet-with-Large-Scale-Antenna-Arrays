@@ -23,3 +23,6 @@ Paper about Small Cell, Massive MIMO and Full-duplex
 - main_N.m : 研究不同天线数下的算法性能脚本
 - main_S.m : 研究不同小区数下的算法性能脚本
 - GradientDescent.m : 梯度下降法求解模块（额外部分，未在论文中提及）
+- Bicoloring.m, DFS.m: 一种利用二分图的中心化算法（效果与DGCA类似，未提及）
+- GcaPlot.m : 研究DGCA的参数性能
+- TimePlot.m : 研究各算法的时间复杂度
